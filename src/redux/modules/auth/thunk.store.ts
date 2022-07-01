@@ -1,6 +1,6 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
 import {api} from '../../../services/api';
-import {IAuthLoginRequest, IAuthResponse} from './types.store';
+import {IAuthResponse, IAuthLoginRequest} from './types.store';
 import {AxiosError} from 'axios';
 
 const handleAuthRequestThunk = createAsyncThunk<

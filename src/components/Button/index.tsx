@@ -7,12 +7,7 @@ import handleAuthRequestThunk from '../../redux/modules/auth/thunk.store';
 const Login: React.FC = () => {
     const dispatch = useDispatch();
     function Test() {
-        dispatch(
-            handleAuthRequestThunk({
-                email: 'gsm2015@outlook.com',
-                password: '12345',
-            }),
-        );
+        dispatch(handleAuthRequestThunk());
     }
     return (
         <View>
