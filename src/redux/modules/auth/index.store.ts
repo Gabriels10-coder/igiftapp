@@ -11,7 +11,7 @@ const store = createSlice({
     initialState,
     name: 'auth',
     reducers: {
-        clearToken: (state) => {
+        clearToken: (state: IAuthState) => {
             state.token = undefined;
             state.loading = false;
         },

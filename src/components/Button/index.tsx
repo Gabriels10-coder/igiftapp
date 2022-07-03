@@ -1,25 +1,26 @@
 import React from 'react';
-import {Button, View, Text} from 'react-native';
-import {REACT_APP_API} from '@env';
-import {useDispatch} from 'react-redux';
-import handleAuthRequestThunk from '../../redux/modules/auth/thunk.store';
+import * as Styled from './styles';
 
-const Login: React.FC = () => {
-    const dispatch = useDispatch();
-    const auth = async () => {
-        dispatch(
-            handleAuthRequestThunk({
-                email: 'gsm2015@outlook.com',
-                password: '12345',
-            }),
-        );
-    };
+export type ButtonVariants = 'contained' | 'outlined';
+export type SizeVariants = 'small' | 'medium' | 'large';
+interface IPropsButton {
+    text: string;
+    type?: ButtonVariants;
+    onPress?: () => void;
+    size?: SizeVariants;
+}
+
+const Button: React.FC<IPropsButton> = ({
+    text,
+    onPress,
+    size = 'medium',
+    type = 'contained',
+}) => {
     return (
-        <View>
-            <Button title="test" onPress={auth} />
-            <Text>{REACT_APP_API}</Text>
-        </View>
+        <Styled.ContainerButton size={size} type={type} onPress={onPress}>
+            <Styled.Text type={type}>{text}</Styled.Text>
+        </Styled.ContainerButton>
     );
 };
 
-export default Login;
+export default Button;
