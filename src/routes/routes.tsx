@@ -9,7 +9,7 @@ const Routes: React.FC = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="Signup"
+                initialRouteName="Logged"
                 screenOptions={{
                     headerShown: false,
                 }}>

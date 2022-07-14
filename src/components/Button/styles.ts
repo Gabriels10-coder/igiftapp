@@ -26,8 +26,8 @@ export const ContainerButton = styled.TouchableOpacity<{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    border-radius: 5px;
+    height: 50px;
+    border-radius: 15px;
     border: ${({type}) => {
         switch (type) {
             case 'contained':
@@ -50,6 +50,6 @@ export const Text = styled.Text<{
                 return '#000';
         }
     }};
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 18px;
 `;
