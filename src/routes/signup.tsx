@@ -4,11 +4,11 @@ import CreateAccount from '../pages/signup/createaccount';
 import Loading from '../components/LoadingPage';
 import ChoiceUser from '../pages/signup/selectoption';
 
-const Stack = createStackNavigator();
-
 const SignUp: React.FC = () => {
+    const Stack = createStackNavigator();
     return (
         <Stack.Navigator
+            initialRouteName="CreateAccount"
             screenOptions={{
                 headerShown: false,
             }}>
