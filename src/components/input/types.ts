@@ -1,6 +1,6 @@
 export interface IInputProps {
     label?: string;
-    onChangeText?: () => void;
+    onChangeText?: (text: string) => void;
     error?: boolean;
     value?: string;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import CreateAccount from '../pages/signup/createaccount';
 import SignUp from './signup';
 import Logged from './logged';
 
@@ -9,10 +10,11 @@ const Routes: React.FC = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="Logged"
+                initialRouteName="CreateAccount"
                 screenOptions={{
                     headerShown: false,
                 }}>
+                <Stack.Screen name="CreateAccount" component={CreateAccount} />
                 <Stack.Screen name="Logged" component={Logged} />
                 <Stack.Screen name="Signup" component={SignUp} />
             </Stack.Navigator>

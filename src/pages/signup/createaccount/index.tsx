@@ -36,7 +36,7 @@ const CreateAccount: React.FC = () => {
                 </Styled.ContainerButtons>
                 <Styled.ContainerButtons>
                     <Button
-                        onPress={() => navigate('ChoiceUser')}
+                        onPress={() => navigate('Signup')}
                         text="Crie a sua conta"
                         type="outlined"
                         size="large"

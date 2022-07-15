@@ -5,7 +5,14 @@ import Login from '../pages/login';
 const Logged: React.FC = () => {
     const Stack = createStackNavigator();
     return (
-        <Stack.Navigator initialRouteName="Login">
+        <Stack.Navigator
+            screenOptions={{
+                headerTitleStyle: {
+                    color: '#000',
+                },
+                headerTintColor: '#1e88e5',
+            }}
+            initialRouteName="Login">
             <Stack.Screen name="Login" component={Login} />
         </Stack.Navigator>
     );

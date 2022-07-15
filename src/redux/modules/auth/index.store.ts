@@ -5,6 +5,7 @@ import handleAuthRequestThunk from './thunk.store';
 const initialState: IAuthState = {
     token: undefined,
     loading: false,
+    error: false,
 };
 
 const store = createSlice({
@@ -19,13 +20,15 @@ const store = createSlice({
     extraReducers: builder => {
         builder.addCase(handleAuthRequestThunk.fulfilled, (state, action) => {
             state.loading = false;
-            state.token = action.payload?.token;
+            state.token = action.payload;
+            state.error = false;
         });
         builder.addCase(handleAuthRequestThunk.pending, state => {
             state.loading = true;
         });
         builder.addCase(handleAuthRequestThunk.rejected, state => {
             state.loading = false;
+            state.error = true;
         });
     },
 });
