@@ -3,6 +3,7 @@ import Button from '../../../components/Button';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RoutesParams} from '../../../@types/customTypes';
+import tree from '../../../assets/lottie/tree.json';
 import * as Styled from './styles';
 
 const CreateAccount: React.FC = () => {
@@ -10,13 +11,7 @@ const CreateAccount: React.FC = () => {
     return (
         <>
             <Styled.ContainerLottie>
-                <Styled.Gift
-                    speed={2}
-                    autoPlay
-                    source={{
-                        uri: 'https://assets5.lottiefiles.com/datafiles/Cfz65R9T4YbXUIA/data.json',
-                    }}
-                />
+                <Styled.Gift speed={2} autoPlay source={tree} />
             </Styled.ContainerLottie>
             <Styled.ContainerMasterButton>
                 <Styled.ContainerText>
