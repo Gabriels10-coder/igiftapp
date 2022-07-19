@@ -7,6 +7,8 @@ import {useAppSelector} from '../../redux/config/hooks';
 import handleAuthRequestThunk from '../../redux/modules/auth/thunk.store';
 import {getDeviceName} from 'react-native-device-info';
 import Layout from '../../components/layout/estrutura';
+import {ShowToast} from '../../utils/toast';
+import {setError} from '../../redux/modules/auth/index.store';
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -15,6 +17,14 @@ const Login: React.FC = () => {
     const {error} = useAppSelector(state => state.auth);
 
     const Auth = async () => {
+        if (!email || !password) {
+            dispatch(setError(true));
+            return ShowToast(
+                'error',
+                'Atenção',
+                'Preencha os campos obrigatórios',
+            );
+        }
         dispatch(
             handleAuthRequestThunk({
                 email,

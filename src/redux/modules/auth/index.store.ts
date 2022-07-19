@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {IAuthState} from './types.store';
 import handleAuthRequestThunk from './thunk.store';
 
@@ -15,6 +15,9 @@ const store = createSlice({
         clearToken: (state: IAuthState) => {
             state.token = undefined;
             state.loading = false;
+        },
+        setError: (state: IAuthState, action: PayloadAction<boolean>) => {
+            state.error = action.payload;
         },
     },
     extraReducers: builder => {
@@ -33,5 +36,5 @@ const store = createSlice({
     },
 });
 
-export const {clearToken} = store.actions;
+export const {clearToken, setError} = store.actions;
 export default store.reducer;

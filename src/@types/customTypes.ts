@@ -11,4 +11,5 @@ export type RoutesParams = {
     //Logged
     Inicio: undefined;
     LoggedRoutes: undefined;
+    Search: undefined;
 };
