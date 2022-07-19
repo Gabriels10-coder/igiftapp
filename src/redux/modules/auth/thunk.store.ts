@@ -13,7 +13,6 @@ const handleAuthRequestThunk = createAsyncThunk(
             const response = await api.post<IAuthResponse>('/auth', request);
             console.log(response.data);
             dispatch(setLoading(false));
-            ShowToast('success', 'Sucesso', 'Logado');
             return response.data.token;
         } catch (error) {
             const err = error as Error;

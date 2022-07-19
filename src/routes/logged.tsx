@@ -1,20 +1,35 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import Login from '../pages/login';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Dashboard from '../pages/logged/dashboard';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
+const Tab = createBottomTabNavigator();
 
 const Logged: React.FC = () => {
-    const Stack = createStackNavigator();
     return (
-        <Stack.Navigator
+        <Tab.Navigator
             screenOptions={{
-                headerTitleStyle: {
-                    color: '#000',
+                headerShown: false,
+                tabBarStyle: {
+                    height: 60,
                 },
-                headerTintColor: '#1e88e5',
-            }}
-            initialRouteName="Login">
-            <Stack.Screen name="Login" component={Login} />
-        </Stack.Navigator>
+                tabBarLabelStyle: {
+                    color: '#1e88e5',
+                    marginBottom: 5,
+                    fontWeight: 'bold',
+                    fontSize: 12,
+                },
+            }}>
+            <Tab.Screen
+                options={{
+                    tabBarIcon: () => (
+                        <Icon name="house" color="#1e88e5" size={28} />
+                    ),
+                }}
+                name="Inicio"
+                component={Dashboard}
+            />
+        </Tab.Navigator>
     );
 };
 

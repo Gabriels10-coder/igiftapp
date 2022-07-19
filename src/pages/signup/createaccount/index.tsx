@@ -26,7 +26,7 @@ const CreateAccount: React.FC = () => {
                         text="Já tenho uma conta"
                         type="contained"
                         size="large"
-                        onPress={() => navigate('Logged')}
+                        onPress={() => navigate('LoginRoute')}
                     />
                 </Styled.ContainerButtons>
                 <Styled.ContainerButtons>

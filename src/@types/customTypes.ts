@@ -5,6 +5,10 @@ export type RoutesParams = {
     LoadingPage: undefined;
     //signin
     Login: undefined;
-    Logged: undefined;
+    LoginRoute: undefined;
     Signup: undefined;
+
+    //Logged
+    Inicio: undefined;
+    LoggedRoutes: undefined;
 };
