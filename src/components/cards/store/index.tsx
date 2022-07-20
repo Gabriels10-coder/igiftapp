@@ -1,16 +1,22 @@
 import React from 'react';
-import {View} from 'react-native';
 import {Avatar} from 'react-native-paper';
+import Icon from 'react-native-vector-icons/Entypo';
+import * as Styled from './styles';
 
 const StoreCard: React.FC = () => {
     return (
-        <View>
-            <Avatar.Image
-                source={{
-                    uri: 'https://files.sunoresearch.com.br/n/uploads/2021/04/8106c24d-riachuelo-800x450.jpg',
-                }}
-            />
-        </View>
+        <Styled.CustomCard>
+            <Styled.ContainerAvatar>
+                <Avatar.Image size={50} source={{uri: 'test'}} />
+            </Styled.ContainerAvatar>
+            <Styled.ContainerContent>
+                <Styled.TitleEstablishment>Netshoes</Styled.TitleEstablishment>
+                <Styled.ContainerAvaliation>
+                    <Icon name="star" size={15} color="#ffbf00" />
+                    <Styled.NumberAvaliation>4,5</Styled.NumberAvaliation>
+                </Styled.ContainerAvaliation>
+            </Styled.ContainerContent>
+        </Styled.CustomCard>
     );
 };
 
