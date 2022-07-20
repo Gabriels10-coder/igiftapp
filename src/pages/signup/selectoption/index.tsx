@@ -1,5 +1,5 @@
 import React from 'react';
-import CardChoice from '../../../components/cardchoice';
+import CardChoice from '../../../components/cards/choice';
 import * as Styled from './styles';
 
 const ChoiceUser: React.FC = () => {

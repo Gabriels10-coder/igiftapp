@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const SearchEstablishment: React.FC = () => {
+const Requests: React.FC = () => {
     return (
         <View>
-            <Text>Search</Text>
+            <Text>Pedidos</Text>
         </View>
     );
 };
 
-export default SearchEstablishment;
+export default Requests;

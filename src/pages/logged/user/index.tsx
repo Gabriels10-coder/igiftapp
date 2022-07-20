@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const SearchEstablishment: React.FC = () => {
+const User: React.FC = () => {
     return (
         <View>
-            <Text>Search</Text>
+            <Text>Usuário</Text>
         </View>
     );
 };
 
-export default SearchEstablishment;
+export default User;

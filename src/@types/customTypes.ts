@@ -12,4 +12,6 @@ export type RoutesParams = {
     Inicio: undefined;
     LoggedRoutes: undefined;
     Search: undefined;
+    Pedidos: undefined;
+    User: undefined;
 };
