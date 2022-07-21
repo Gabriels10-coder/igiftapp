@@ -1,18 +1,27 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import {useDispatch} from 'react-redux';
-import Button from '../../../components/Button';
+import {ScrollView} from 'react-native';
 import StoreCard from '../../../components/cards/store';
-import {clearToken} from '../../../redux/modules/auth/index.store';
+import * as Styled from './styles';
 
 const Dashboard: React.FC = () => {
-    const dispatch = useDispatch();
     return (
-        <View>
-            <Text>Inicio</Text>
+        <ScrollView>
+            <Styled.ConteinerTitleStore>
+                <Styled.TitleStore>Lojas</Styled.TitleStore>
+            </Styled.ConteinerTitleStore>
             <StoreCard />
-            <Button text="Sair" onPress={() => dispatch(clearToken())} />
-        </View>
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+            <StoreCard />
+        </ScrollView>
     );
 };
 
