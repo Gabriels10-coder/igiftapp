@@ -1,10 +1,11 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.SafeAreaView`
-    height: 200px;
-    width: 150px;
-    border: 4px solid #1e88e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+export const TitleCard = styled.Text`
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+`;
+
+export const ContainerCard = styled.SafeAreaView`
+    flex-direction: row;
 `;
