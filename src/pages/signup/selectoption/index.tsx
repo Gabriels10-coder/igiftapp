@@ -6,7 +6,21 @@ const ChoiceUser: React.FC = () => {
     return (
         <Styled.Container>
             <Styled.Text>Como você deseja utilizar ?</Styled.Text>
-            <CardChoice />
+            <CardChoice
+                icon="user"
+                title="Usuário"
+                desc="Venha fazer suas compras no iGift"
+            />
+            <CardChoice
+                icon="user"
+                title="Usuário"
+                desc="Venha fazer suas compras no iGift"
+            />
+            <CardChoice
+                icon="user"
+                title="Usuário"
+                desc="Venha fazer suas compras no iGift"
+            />
         </Styled.Container>
     );
 };

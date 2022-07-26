@@ -9,8 +9,7 @@ export const Loading = styled(AnimatedLottieView)`
 export const Text = styled.Text`
     font-size: 20px;
     margin-top: 300px;
-    font-weight: bold;
-    color: #808080;
+    color: #000;
 `;
 export const ContainerLottie = styled.SafeAreaView`
     display: flex;
