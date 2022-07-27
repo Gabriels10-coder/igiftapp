@@ -1,11 +1,24 @@
 import styled from 'styled-components/native';
 
 export const Text = styled.Text`
-    font-size: 20px;
-    color: #808080;
+    font-size: 28px;
+    color: #000;
     font-weight: bold;
 `;
-export const Container = styled.TouchableOpacity`
-    flex: 1;
+
+export const Desc = styled.Text`
+    font-size: 15px;
+    color: #000;
+    margin-top: 10px;
+`;
+export const Container = styled.SafeAreaView``;
+
+export const ContainerTitle = styled.SafeAreaView`
+    margin-left: 26px;
+    margin-top: 20px;
+`;
+
+export const ContainerCards = styled.SafeAreaView`
     align-items: center;
+    justify-content: flex-start;
 `;
