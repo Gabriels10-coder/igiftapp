@@ -9,6 +9,9 @@ const LoginRoute: React.FC = () => {
     return (
         <Stack.Navigator
             screenOptions={{
+                headerStyle: {
+                    elevation: 0,
+                },
                 headerTitleStyle: {
                     color: '#000',
                 },

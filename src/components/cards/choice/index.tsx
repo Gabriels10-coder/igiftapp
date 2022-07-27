@@ -7,6 +7,7 @@ import {IPropsCardChoice} from './types';
 const CardChoice: React.FC<IPropsCardChoice> = ({desc, icon, title}) => {
     return (
         <Card
+            onPress={() => alert('test')}
             style={{width: '95%', height: 80, borderRadius: 15, marginTop: 10}}>
             <Card.Content>
                 <Styled.ContainerCard>

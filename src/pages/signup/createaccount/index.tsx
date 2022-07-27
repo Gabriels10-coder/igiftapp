@@ -9,7 +9,7 @@ import * as Styled from './styles';
 const CreateAccount: React.FC = () => {
     const {navigate} = useNavigation<StackNavigationProp<RoutesParams>>();
     return (
-        <>
+        <Styled.Container>
             <Styled.ContainerLottie>
                 <Styled.Gift speed={2} autoPlay source={tree} />
             </Styled.ContainerLottie>
@@ -38,7 +38,7 @@ const CreateAccount: React.FC = () => {
                     />
                 </Styled.ContainerButtons>
             </Styled.ContainerMasterButton>
-        </>
+        </Styled.Container>
     );
 };
 

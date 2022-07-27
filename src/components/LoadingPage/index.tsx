@@ -4,12 +4,12 @@ import * as Styled from './styles';
 
 const Loading: React.FC = () => {
     return (
-        <>
+        <Styled.Container>
             <Styled.ContainerLottie>
                 <Styled.Loading autoSize speed={1.4} autoPlay source={gift} />
                 <Styled.Text>Aguarde por favor...</Styled.Text>
             </Styled.ContainerLottie>
-        </>
+        </Styled.Container>
     );
 };
 

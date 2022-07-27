@@ -1,5 +1,6 @@
 import React from 'react';
 import CardChoice from '../../../components/cards/choice';
+import {Divider} from 'react-native-paper';
 import * as Styled from './styles';
 
 const ChoiceUser: React.FC = () => {
@@ -11,21 +12,24 @@ const ChoiceUser: React.FC = () => {
                     Escolha como você utilizará a plataforma
                 </Styled.Desc>
             </Styled.ContainerTitle>
+            <Styled.ContainerDivider>
+                <Divider />
+            </Styled.ContainerDivider>
             <Styled.ContainerCards>
                 <CardChoice
                     icon="shopping-cart"
                     title="Cliente"
-                    desc="Venha fazer suas compras "
+                    desc="Venha fazer suas compras;"
                 />
                 <CardChoice
                     icon="dollar-sign"
                     title="Vendedor"
-                    desc="Venda seus produtos com mais facilidade"
+                    desc="Venha vender com a gente."
                 />
                 <CardChoice
                     icon="truck"
                     title="Entregador"
-                    desc="Venha trabalhar com a gente"
+                    desc="Venha trabalhar com a gente."
                 />
             </Styled.ContainerCards>
         </Styled.Container>

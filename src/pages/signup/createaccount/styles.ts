@@ -1,6 +1,11 @@
 import styled from 'styled-components/native';
 import AnimatedLottieView from 'lottie-react-native';
 
+export const Container = styled.SafeAreaView`
+    background-color: #fff;
+    flex: 1;
+`;
+
 export const ContainerLottie = styled.SafeAreaView`
     display: flex;
     align-items: center;

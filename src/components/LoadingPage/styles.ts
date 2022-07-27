@@ -17,3 +17,7 @@ export const ContainerLottie = styled.SafeAreaView`
     justify-content: center;
     height: 500px;
 `;
+export const Container = styled.SafeAreaView`
+    background-color: #fff;
+    flex: 1;
+`;

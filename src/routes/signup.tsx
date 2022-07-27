@@ -12,6 +12,7 @@ const SignUp: React.FC = () => {
             screenOptions={{
                 headerStyle: {
                     backgroundColor: '#fff',
+                    elevation: 0,
                 },
                 headerLeft: () => (
                     <Icon
