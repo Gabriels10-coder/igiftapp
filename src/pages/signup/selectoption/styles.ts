@@ -3,13 +3,14 @@ import styled from 'styled-components/native';
 export const Text = styled.Text`
     font-size: 28px;
     color: #000;
-    font-weight: bold;
+    font-family: 'Karla ExtraBold';
 `;
 
 export const Desc = styled.Text`
     font-size: 15px;
     color: #000;
     margin-top: 10px;
+    font-family: 'Karla Regular';
 `;
 export const Container = styled.SafeAreaView`
     background-color: #fff;

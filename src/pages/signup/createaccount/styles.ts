@@ -24,6 +24,7 @@ export const Title = styled.Text`
     font-size: 17px;
     color: #000;
     font-weight: bold;
+    font-family: 'Karla-Regular';
 `;
 
 export const ContainerDesc = styled.SafeAreaView`
