@@ -5,6 +5,8 @@ import {IInputProps} from './types';
 const Input: React.FC<IInputProps> = ({value, error, label, onChangeText}) => {
     return (
         <CustomInput
+            style={{fontFamily: 'Karla Regular'}}
+            
             activeOutlineColor="#1e88e5"
             label={label}
             mode="outlined"

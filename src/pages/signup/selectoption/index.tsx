@@ -19,7 +19,7 @@ const ChoiceUser: React.FC = () => {
                 <CardChoice
                     icon="shopping-cart"
                     title="Cliente"
-                    desc="Venha fazer suas compras;"
+                    desc="Venha fazer suas compras."
                 />
                 <CardChoice
                     icon="dollar-sign"

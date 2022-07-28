@@ -14,6 +14,7 @@ const LoginRoute: React.FC = () => {
                 },
                 headerTitleStyle: {
                     color: '#000',
+                    fontFamily: 'Karla Bold',
                 },
                 headerTintColor: '#1e88e5',
                 headerShown: loading ? false : true,

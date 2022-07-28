@@ -23,8 +23,7 @@ export const ContainerText = styled.SafeAreaView`
 export const Title = styled.Text`
     font-size: 17px;
     color: #000;
-    font-weight: bold;
-    font-family: 'Karla-Regular';
+    font-family: 'Karla ExtraBold';
 `;
 
 export const ContainerDesc = styled.SafeAreaView`
@@ -35,6 +34,7 @@ export const ContainerDesc = styled.SafeAreaView`
 export const Desc = styled.Text`
     font-size: 16px;
     color: #808080;
+    font-family: 'Karla Medium';
 `;
 export const ContainerButtons = styled.SafeAreaView`
     display: flex;

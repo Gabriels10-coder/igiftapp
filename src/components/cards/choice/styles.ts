@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 export const TitleCard = styled.Text`
     font-size: 16px;
     color: #000;
+    font-family: 'Karla Regular';
 `;
 
 export const DescCard = styled.Text`
@@ -10,6 +11,7 @@ export const DescCard = styled.Text`
     font-size: 14px;
     opacity: 0.9;
     margin-top: 6px;
+    font-family: 'Karla Regular';
 `;
 
 export const ContainerCard = styled.SafeAreaView`

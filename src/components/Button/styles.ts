@@ -50,7 +50,6 @@ export const Text = styled.Text<{
                 return '#000';
         }
     }};
-    font-weight: bold;
     font-size: 18px;
-    font-family: 'Karla Regular';
+    font-family: 'Karla Bold';
 `;
