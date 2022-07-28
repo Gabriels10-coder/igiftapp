@@ -10,6 +10,7 @@ export const Text = styled.Text`
     font-size: 20px;
     margin-top: 300px;
     color: #000;
+    font-family: 'Karla Bold';
 `;
 export const ContainerLottie = styled.SafeAreaView`
     display: flex;
